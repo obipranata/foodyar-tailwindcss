@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./assets/images/logo.png" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,400;1,500;1,600;1,700;1,800&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Quicksand:wght@300;400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Aos -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <!-- Flowbite CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.4/dist/flowbite.min.css" />
+
+  <!-- Tailwindcss -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- My CSS -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        fontFamily: {
+          'sans': ['Quicksand'],
+          'serif': ['Quicksand'],
+          'mono': ['Quicksand'],
+          'display': ['Quicksand'],
+          'body': ['Quicksand'],
+        },
+        container: {
+          screens: {
+            xl: "1240px",
+          },
+          center: true,
+        },
+        extend: {
+          colors: {
+            primary: '#F7C531',
+            foodyar: '#272042'
+          }
+        }
+      }
+    }
+  </script>
+
+  <title>Foodyar</title>
+</head>
+
+<body>
+
+  <nav id="header" class="mt-[50px]">
+    <div class="container flex flex-wrap lg:flex-nowrap justify-between items-center px-5 lg:px-0">
+      <a href="">
+        <div class="logo-box flex gap-2.5 w-[28px] h-[28px] items-center ">
+          <img src="./assets/images/logo.png" alt="Logo Foodyar">
+          <span class="font-medium text-[28px] leading-[35px] text-foodyar">Foodyar</span>
+        </div>
+      </a>
+      <button data-collapse-toggle="navbar-defaults" type="button"
+        class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+        aria-controls="navbar-defaults" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd"
+            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+            clip-rule="evenodd"></path>
+        </svg>
+      </button>
+      <div id="navbar-defaults" class="hidden lg:block w-full">
+        <div class="menu flex flex-col md:flex-row justify-center lg:justify-end items-center gap-[50px]">
+          <ul class="flex flex-col md:flex-row gap-[46px]">
+            <li><a class="active" href="#">Home</a></li>
+            <li><a href="#">Beverages</a></li>
+            <li><a href="#">Chef</a></li>
+            <li><a href="#">Ingredient</a></li>
+            <li><a href="#">Stories</a></li>
+          </ul>
+          <div
+            class="box-button flex items-center justify-center w-[155px] h-[50px] bg-[#FBE0DC] rounded-t-[30px] rounded-b-[15px] hover:transform hover:scale-110 hover:duration-300 hover:delay-150">
+            <a href="">My Kitchen</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <section id="hero" class="mt-[100px]">
+    <div
+      class="container flex flex-wrap-reverse justify-center lg:flex-nowrap lg:justify-between items-center px-[45px] gap-5">
+      <div data-aos="zoom-in-right" class="box-title w-[425px] text-center md:text-start">
+        <h1 class="text-[30px] leading-[56px] md:text-[46px] md:leading-[70px]">
+          <span>Eat</span>
+          What You Cook
+          With Us, <span>Together!</span>
+        </h1>
+        <p>When you eat something that cooked by
+          yourself, the happiness is priceless.</p>
+        <div
+          class="box-button mt-[40px] box-button flex items-center justify-center w-[210px] h-[50px] bg-primary rounded-t-[30px] rounded-b-[15px] mx-auto md:mx-0 hover:transform hover:scale-110 hover:duration-300 hover:delay-150">
+          <a href="">Decide a Menu</a>
+        </div>
+      </div>
+      <div
+        class="box-image md:max-w-[625px] relative hover:transform hover:scale-110 hover:-rotate-2 hover:duration-300 hover:delay-150">
+        <img src="./assets/images/hero.png" class="md:max-w-[625px]" alt="">
+        <a href="">
+          <div
+            class="play-button absolute bottom-[30%] left-[40%] md:bottom-[45%] md:left-[45%] bg-[#FBE0DC] w-[70px] h-[70px] flex justify-center items-center rounded-full">
+            <img src="./assets/icons/play-button.png" class="">
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="food-menu" class="mt-[100px]">
+    <div data-aos="fade-up" data-aos-duration="3000" class="food-menu text-center">
+      <h4 class="font-normal text-5 leading-[25px] text-[#8B8BA5]">Watch Now</h4>
+      <h2 class="font-bold text-[32px] leading-[40px] text-foodyar mt-2.5 mb-[30px]">Special to Try</h2>
+      <ul class="flex flex-wrap md:flex-nowrap justify-center gap-[50px]">
+        <li><a class="active" href="">Healthy Food</a></li>
+        <li><a href="">Lunch</a></li>
+        <li><a href="">Vege Desert</a></li>
+        <li><a href="">Shake</a></li>
+      </ul>
+    </div>
+    <div data-aos="fade-up" data-aos-duration="3000" data-aos-duration="3000"
+      class="container flex flex-wrap lg:flex-nowrap justify-center gap-10 items-center lg:justify-between mt-[50px]">
+      <div class="card text-center">
+        <div class="relative w-[287px] h-[300px] box-border">
+          <div class="card-image bg-[url('./assets/images/bg.png')] bg-contain w-[287px] h-[300px] relative">
+            <img src="./assets/images/image1.png">
+          </div>
+          <div
+            class="absolute h-[285px] w-[270px] bg-black/[.5] top-2 right-[5px] rounded-tl-[70px] rounded-tr-[30px] rounded-bl-[70px] rounded-br-[78px] opacity-0 hover:opacity-100 transition ease-in-out delay-150">
+            <a href="">
+              <div
+                class="play-button absolute bottom-[40%] left-[35%] bg-[#FBE0DC] w-[70px] h-[70px] flex justify-center items-center rounded-full">
+                <img src="./assets/icons/play-button.png" class="">
+              </div>
+            </a>
+          </div>
+        </div>
+        <h3 class="mt-[14px] mb-[8px]">Salad Kiwi Sugga</h3>
+        <p class="font-normal text-[16px] leading-5 text-[#8B8BA5]">Amir Samantha</p>
+        <div class="star flex justify-center mt-[12px] gap-2.5">
+          <img class="hover:transform hover:scale-150 hover:delay-150 hover:duration-300" src="./assets/icons/star.png">
+          <img class="hover:transform hover:scale-150 hover:delay-150 hover:duration-300" src="./assets/icons/star.png">
+          <img class="hover:transform hover:scale-150 hover:delay-150 hover:duration-300" src="./assets/icons/star.png">
+          <img class="hover:transform hover:scale-150 hover:delay-150 hover:duration-300" src="./assets/icons/star.png">
+          <img class="hover:transform hover:scale-150 hover:delay-150 hover:duration-300" src="./assets/icons/star.png">
+        </div>
+      </div>
+      <div class="card text-center">
+        <div class="relative w-[287px] h-[300px]">
+          <div class="card-image bg-[url('./assets/images/bg.png')] bg-contain w-[287px] h-[300px] relative">
+            <img src="./assets/images/image2.png">
+          </div>
+          <div
+            class="absolute h-[285px] w-[270px] bg-black/[.5] top-2 right-[5px] rounded-tl-[70px] rounded-tr-[30px] rounded-bl-[70px] rounded-br-[78px] opacity-0 hover:opacity-100 transition ease-in-out delay-150">
+            <a href="">
+              <div
+                class="play-button absolute bottom-[40%] left-[35%] bg-[#FBE0DC] w-[70px] h-[70px] flex justify-center items-center rounded-full">
+                <img src="./assets/icons/play-button.png" class="">
+              </div>
+            </a>
+          </div>
+        </div>
+        <h3 class="mt-[14px] mb-[8px]">Avocado Muscle</h3>
+        <p class="font-normal text-[16px] leading-5 text-[#8B8BA5]">John Lennonk</p>
+        <div class="star flex justify-center mt-[12px] gap-2.5">
+          <img class="hover:transform hover:scale-150 hover:delay-150 hover:duration-300" src="./assets/icons/star.png">
+          <img class="hover:transform hover:scale-150 hover:delay-150 hover:duration-300" src="./assets/icons/star.png">
+          <img class="hover:transform hover:scale-150 hover:delay-150 hover:duration-300" src="./assets/icons/star.png">
+          <img class="hover:transform hover:scale-150 hover:delay-150 hover:duration-300" src="./assets/icons/star.png">
+          <img class="hover:transform hover:scale-150 hover:delay-150 hover:duration-300" src="./assets/icons/star.png">
+        </div>
+      </div>
+      <div class="card text-center">
+        <div class="relative w-[287px] h-[300px]">
+          <div class="card-image bg-[url('./assets/images/bg.png')] bg-contain w-[287px] h-[300px] relative">
+            <img src="./assets/images/image3.png">
+          </div>
+          <div
+            class="absolute h-[285px] w-[270px] bg-black/[.5] top-2 right-[5px] rounded-tl-[70px] rounded-tr-[30px] rounded-bl-[70px] rounded-br-[78px] opacity-0 hover:opacity-100 transition ease-in-out delay-150">
+            <a href="">
+              <div
+                class="play-button absolute bottom-[40%] left-[35%] bg-[#FBE0DC] w-[70px] h-[70px] flex justify-center items-center rounded-full">
+                <img src="./assets/icons/play-button.png" class="">
+              </div>
+            </a>
+          </div>
+        </div>
+        <h3 class="mt-[14px] mb-[8px]">Bayam Red Poppeye</h3>
+        <p class="font-normal text-[16px] leading-5 text-[#8B8BA5]">Toekang Sayoer</p>
+        <div class="star flex justify-center mt-[12px] gap-2.5">
+          <img class="hover:transform hover:scale-150 hover:delay-150 hover:duration-300" src="./assets/icons/star.png">
+          <img class="hover:transform hover:scale-150 hover:delay-150 hover:duration-300" src="./assets/icons/star.png">
+          <img class="hover:transform hover:scale-150 hover:delay-150 hover:duration-300" src="./assets/icons/star.png">
+          <img class="hover:transform hover:scale-150 hover:delay-150 hover:duration-300" src="./assets/icons/star.png">
+          <img class="hover:transform hover:scale-150 hover:delay-150 hover:duration-300" src="./assets/icons/star.png">
+        </div>
+      </div>
+      <div class="card text-center">
+        <div class="relative w-[287px] h-[300px]">
+          <div class="card-image bg-[url('./assets/images/bg.png')] bg-contain w-[287px] h-[300px] relative">
+            <img src="./assets/images/image4.png">
+          </div>
+          <div
+            class="absolute h-[285px] w-[270px] bg-black/[.5] top-2 right-[5px] rounded-tl-[70px] rounded-tr-[30px] rounded-bl-[70px] rounded-br-[78px] opacity-0 hover:opacity-100 transition ease-in-out delay-150">
+            <a href="">
+              <div
+                class="play-button absolute bottom-[40%] left-[35%] bg-[#FBE0DC] w-[70px] h-[70px] flex justify-center items-center rounded-full">
+                <img src="./assets/icons/play-button.png" class="">
+              </div>
+            </a>
+          </div>
+        </div>
+        <h3 class="mt-[14px] mb-[8px]">Naga Fruity Joss</h3>
+        <p class="font-normal text-[16px] leading-5 text-[#8B8BA5]">Imelda Saranghae</p>
+        <div class="star flex justify-center mt-[12px] gap-2.5">
+          <img class="hover:transform hover:scale-150 hover:delay-150 hover:duration-300" src="./assets/icons/star.png">
+          <img class="hover:transform hover:scale-150 hover:delay-150 hover:duration-300" src="./assets/icons/star.png">
+          <img class="hover:transform hover:scale-150 hover:delay-150 hover:duration-300" src="./assets/icons/star.png">
+          <img class="hover:transform hover:scale-150 hover:delay-150 hover:duration-300" src="./assets/icons/star.png">
+          <img class="hover:transform hover:scale-150 hover:delay-150 hover:duration-300" src="./assets/icons/star.png">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="quote" class="mt-[80px] md:mt-[155px]">
+    <div data-aos="fade-up" data-aos-duration="3000" class="container">
+      <div class="quote relative">
+        <p class="quote-kutip left-[10px] lg:left-[110px] top-[-270px] md:top-[-220px] text-[200px] md:text-[500px]">“
+        </p>
+        <p
+          class="max-w-[300px] md:max-w-[736px] text-center mx-auto font-normal text-[20px] md:text-[30px] lg:text-[36px] md:leading-[50px] text-foodyar">
+          Awalnya saya malu dengan mertua karena tidak bisa memasak, kini mereka lebih suka makan malam di rumah demi
+          menyantap masakan yang saya buat sendiri
+        </p>
+      </div>
+      <div class="user flex justify-center items-center mt-5 gap-5">
+        <div class="image-box">
+          <img src="./assets/images/user-image.png"
+            class="w-[80px] h-[80px] rounded-full shadow-[4px_4px_#D8CBF6,_-4px_-4px_#FDFAE5]">
+        </div>
+        <div class="title-name">
+          <h3>Camella Sarrah</h3>
+          <p class="font-normal text-[16px] leading-5 text-[#8B8BA5]">Vege Master</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="statistic" class="mt-[100px]">
+    <div data-aos="fade-up" data-aos-duration="3000"
+      class="container flex flex-wrap lg:flex-nowrap justify-center text-center gap-[50px] md:gap-[60px] lg:gap-[100px]">
+      <div>
+        <h2 class="font-bold text-[24px] md:text-[32px] leading-[40px] text-foodyar">
+          180.000+
+        </h2>
+        <h4 class="font-normal text-5 leading-[25px] text-[#8B8BA5] mt-[8px]">MENU FOOD</h4>
+      </div>
+      <div>
+        <h2 class="font-bold text-[24px] md:text-[32px] leading-[40px] text-foodyar">
+          20.000+
+        </h2>
+        <h4 class="font-normal text-5 leading-[25px] text-[#8B8BA5] mt-[8px]">CHEFS</h4>
+      </div>
+      <div>
+        <h2 class="font-bold text-[24px] md:text-[32px] leading-[40px] text-foodyar">
+          400.000+
+        </h2>
+        <h4 class="font-normal text-5 leading-[25px] text-[#8B8BA5] mt-[8px]">COURSE</h4>
+      </div>
+      <div>
+        <h2 class="font-bold text-[24px] md:text-[32px] leading-[40px] text-foodyar">
+          6.900.000
+        </h2>
+        <h4 class="font-normal text-5 leading-[25px] text-[#8B8BA5] mt-[8px]">ALUMNI</h4>
+      </div>
+    </div>
+  </section>
+
+  <section id="download-app" class="mt-[100px]">
+    <div
+      class="container flex flex-wrap lg:flex-nowrap justify-center gap-10 lg:gap-[150px] items-center text-center lg:text-start">
+      <div data-aos="fade-up" data-aos-duration="3000"
+        class="box-image hover:transform hover:scale-110 hover:-rotate-2 hover:duration-300 hover:delay-150">
+        <img src="./assets/images/app.png" alt="">
+      </div>
+      <div data-aos="fade-up" data-aos-duration="3000" class="box-title w-[444px]">
+        <h1 class="text-[30px] leading-[56px] md:text-[46px] md:leading-[70px]">
+          <span>Download</span>
+          our app and join
+          <span>the contest</span>
+        </h1>
+        <p>In order to improve our cooking skills,
+          we do need a food photography </p>
+        <div class="box-button mt-[50px] flex gap-5 justify-center lg:justify-start">
+          <a href="">
+            <img src="./assets/images/appstore.png"
+              class="max-h-[50px] hover:transform hover:scale-110 hover:delay-150 hover:duration-300">
+          </a>
+          <a href="">
+            <img src="./assets/images/playstore.png"
+              class="max-h-[50px] hover:transform hover:scale-110 hover:delay-150 hover:duration-300">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="footer" class="mt-[150px]">
+    <div data-aos="fade-up" data-aos-duration="3000" class="menu-footer py-[70px] border-y-[1px] mb-[30px]">
+      <div class="container flex flex-wrap gap-5 justify-between px-[45px] items-center">
+        <a href="" class="hidden lg:block">
+          <div class="logo-box flex gap-2.5 w-[28px] h-[28px] items-center">
+            <img src="./assets/images/logo.png" alt="Logo Foodyar">
+            <span class="font-medium text-[28px] leading-[35px] text-foodyar">Foodyar</span>
+          </div>
+        </a>
+        <div>
+          <h3 class="text-start text-[22px] font-medium leading-[28px] mb-5">Special Course</h3>
+          <ul class="text-start">
+            <li><a href="">Wedding Foods</a></li>
+            <li><a href="">Healthy and Muscle</a></li>
+            <li><a href="">Office Food Daily</a></li>
+            <li><a href="">Happy Kids</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-start text-[22px] font-medium leading-[28px] mb-5">Company</h3>
+          <ul class="text-start">
+            <li><a href="">APIs Developer</a></li>
+            <li><a href="">Career</a></li>
+            <li><a href="">Terms & Conditions</a></li>
+            <li><a href="">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-start text-[22px] font-medium leading-[28px] mb-5">Be Our Friend</h3>
+          <ul class="text-start">
+            <li><a href="">3, Season Park, Jakarta</a></li>
+            <li><a href="">support@foodyar.co,id</a></li>
+            <li><a href="">Office Food Daily</a></li>
+            <li><a href="">021 - 1111 - 2222</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="copyright text-center mb-[30px] px-5">
+      <p class="font-normal text-[16px] leading-[20px] text-[#8B8BA5]">All Rights Reserved Foodyar by Pixel from
+        BuildWith Angga 2020</p>
+    </div>
+  </section>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="https://unpkg.com/flowbite@1.5.4/dist/flowbite.js"></script>
+</body>
+
+</html>

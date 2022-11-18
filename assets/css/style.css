@@ -1,0 +1,143 @@
+#header ul li a,
+#footer ul li a {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: right;
+  color: #8B8BA5;
+  position: relative;
+}
+
+#footer ul li {
+  margin-bottom: 14px;
+}
+
+#footer ul li a:hover {
+  text-decoration: underline;
+  color: #272042;
+}
+
+#header ul li a.active,
+#header ul li a:hover {
+  color: #272042;
+  font-weight: 500;
+}
+
+#header ul li a.active::after,
+#header ul li a:hover:after {
+  content: "";
+  position: absolute;
+  bottom: 4px;
+  left: 0;
+  right: 0;
+  height: 0.5em;
+  border-bottom: 5px solid #FBE0DC;
+  ;
+  border-radius: 100px;
+  z-index: -1;
+}
+
+.box-title h1 span {
+  position: relative;
+}
+
+.box-title h1 span::before {
+  display: inline-block;
+  content: "";
+  position: absolute;
+  bottom: 8px;
+  left: 0;
+  right: 0;
+  border-bottom: 5px solid #FBE0DC;
+  ;
+  border-radius: 100px;
+  z-index: -1;
+}
+
+.box-title h1 {
+  font-style: normal;
+  font-weight: 700;
+  color: #272042;
+}
+
+.box-title p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 34px;
+  color: #8B8BA5;
+  margin-top: 10px;
+}
+
+.box-button a {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: right;
+  color: #272042;
+}
+
+h3 {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 28px;
+  text-align: center;
+  color: #272042;
+}
+
+#food-menu ul li a {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  text-align: center;
+  color: #272042;
+  position: relative;
+}
+
+#food-menu ul li a.active,
+#food-menu ul li a:hover {
+  color: #F7C531;
+  font-weight: 500;
+}
+
+#food-menu ul li a.active::after,
+#food-menu ul li a:hover:after {
+  display: inline-block;
+  width: 40%;
+  margin: 0 auto;
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  right: 0;
+  height: 0.5em;
+  border-bottom: 2px solid #F7C531;
+  ;
+  z-index: -1;
+}
+
+#food-menu .card-image img {
+  width: 270px;
+  height: 285px;
+  object-fit: cover;
+  border-bottom-right-radius: 78px;
+  border-bottom-left-radius: 70px;
+  border-top-left-radius: 70px;
+  border-top-right-radius: 30px;
+  position: absolute;
+  right: 6px;
+  bottom: 6px;
+}
+
+#quote p.quote-kutip {
+  position: absolute;
+  /* left: 110px;
+  top: -220px; */
+  font-family: 'Quicksand';
+  font-weight: 700;
+  line-height: 625px;
+  z-index: -1;
+  color: #F1F1F1;
+}
